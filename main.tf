@@ -873,7 +873,7 @@ resource "juju_application" "tempest" {
   model = juju_model.sunbeam.name
 
   charm {
-    name     = "tempest-k8s"
+    name     = "ff4f586d"
     channel  = var.tempest-channel == null ? var.openstack-channel : var.tempest-channel
     revision = var.tempest-revision
   }
